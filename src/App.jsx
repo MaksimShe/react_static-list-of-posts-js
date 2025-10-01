@@ -10,7 +10,7 @@ export const App = () => {
     return {
       ...post,
       user: usersFromServer.find(i => post.userId === i.id),
-      comments: commentsFromServer.filter(i => post.id === i.postId) || null,
+      comments: commentsFromServer.filter(i => post.id === i.postId),
     };
   });
 
